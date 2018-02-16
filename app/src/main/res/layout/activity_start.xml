@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/startActivity"
+    android:background="@drawable/bg"
+    tools:context="com.example.rupali.minesweeper.StartActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/minesweeper2" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText1"
+        android:hint="Enter your name"
+        android:layout_below="@id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"/>
+    <Button
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/begginer"
+        android:text="BEGGINER"
+        android:background="#81C784"
+        android:textSize="25dp"
+        android:onClick="onClick"
+        android:layout_below="@id/editText1"/>
+    <Button
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/intermediate"
+        android:text="INTERMEDIATE"
+        android:background="#FFAB91"
+        android:textSize="25dp"
+        android:onClick="onClick"
+        android:layout_below="@id/begginer"/>
+    <Button
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/expert"
+        android:text="EXPERT"
+        android:background="#80DEEA"
+        android:onClick="onClick"
+        android:textSize="25dp"
+        android:layout_below="@id/intermediate"/>
+
+</RelativeLayout>
